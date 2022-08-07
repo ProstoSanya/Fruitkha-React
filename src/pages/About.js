@@ -20,7 +20,6 @@ const About = () => {
 							<h2>We are <span className="orange-text">Fruitkha</span></h2>
 							<p>Etiam vulputate ut augue vel sodales. In sollicitudin neque et massa porttitor vestibulum ac vel nisi. Vestibulum placerat eget dolor sit amet posuere. In ut dolor aliquet, aliquet sapien sed, interdum velit. Nam eu molestie lorem.</p>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente facilis illo repellat veritatis minus, et labore minima mollitia qui ducimus.</p>
-							{/*}<a href="about.html" className="boxed-btn mt-4">know more</a>*/}
 						</div>
 					</div>
 				</div>

@@ -49,9 +49,7 @@ const AdminOrders = () => {
 
 	useEffect(() => {
 		setPageLoading(true)
-		//setTimeout(() => {
 		fetchAllOrders().then(() => setPageLoading(false))
-		//}, 3000)
 	}, [])
 
 	const handleStatusChange = async (newStatus, order) => {

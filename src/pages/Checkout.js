@@ -97,9 +97,7 @@ const Checkout = () => {
 			alert(msg)
 		}
 		finally{
-			//setTimeout(() => {
 			setPageLoading(false)
-			//}, 2000)
 		}
 	}
 

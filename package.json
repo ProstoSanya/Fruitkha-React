@@ -1,6 +1,6 @@
 {
   "name": "Fruitkha-React",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "private": true,
   "dependencies": {
     "@chec/commerce.js": "^2.8.0",

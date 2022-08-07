@@ -16,7 +16,6 @@ const AdminProducts = () => {
 
 	const {loading, error, user, token, tokenExp} = useSelector(state => state.auth)
 	const headers = {Authorization: 'Bearer ' + token}
-	//console.log('headers', headers)
 
 	const [pageLoading, setPageLoading] = useState(true)
 
@@ -50,11 +49,9 @@ const AdminProducts = () => {
 
 	useEffect(() => {
 		setPageLoading(true)
-		//setTimeout(() => {
 		fetchTypes(false).then(fetchCallback(setTypes))
 		fetchCountries(false).then(fetchCallback(setCountries))
 		fetchAllProducts().then(() => setPageLoading(false))
-		//}, 3000)
 	}, [])
 
 

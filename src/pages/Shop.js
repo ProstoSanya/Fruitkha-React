@@ -31,7 +31,6 @@ const Shop = () => {
 	const createFilterUrl = makeFilterUrl.bind(null, location.pathname, searchParams)
 
 	useEffect(() => {
-		//setTimeout(() => {
 		fetchTypes().then(fetchCallback(setTypes))
 		fetchCountries().then(fetchCallback(setCountries))
 		fetchProducts({type, country, page, limit}).then((data) => {
@@ -44,7 +43,6 @@ const Shop = () => {
 				setPageCount(page_count)
 			}
 		})
-		//}, 2000)
 	}, [type, country, page])
 
 	const dispatch = useDispatch()
