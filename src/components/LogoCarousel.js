@@ -23,19 +23,19 @@ const LogoCarousel = ({options}) => {
 					>
 
 						<div className="single-logo-item">
-							<img src="images/company-logos/1.png" alt="" style={{display: "block", margin:"0 auto"}} />
+							<img src="images/company-logos/1.png" alt="" style={{display: "block", margin:"0 auto", height:"100%"}} />
 						</div>
 						<div className="single-logo-item">
-							<img src="images/company-logos/2.png" alt="" style={{display: "block", margin:"0 auto"}} />
+							<img src="images/company-logos/2.png" alt="" style={{display: "block", margin:"0 auto", height:"100%"}} />
 						</div>
 						<div className="single-logo-item">
-							<img src="images/company-logos/3.png" alt="" style={{display: "block", margin:"0 auto"}} />
+							<img src="images/company-logos/3.png" alt="" style={{display: "block", margin:"0 auto", height:"100%"}} />
 						</div>
 						<div className="single-logo-item">
-							<img src="images/company-logos/4.png" alt="" style={{display: "block", margin:"0 auto"}} />
+							<img src="images/company-logos/4.png" alt="" style={{display: "block", margin:"0 auto", height:"100%"}} />
 						</div>
 						<div className="single-logo-item">
-							<img src="images/company-logos/5.png" alt="" style={{display: "block", margin:"0 auto"}} />
+							<img src="images/company-logos/5.png" alt="" style={{display: "block", margin:"0 auto", height:"100%"}} />
 						</div>
 
 					</NukaCarousel>
