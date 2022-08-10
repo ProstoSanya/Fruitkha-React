@@ -7,7 +7,7 @@ import { fetchOneProduct, fetchProducts } from '../api/shopAPI'
 import SimilarProducts from '../components/Product/SimilarProducts'
 import { addProductToCart } from '../redux/actions/cart'
 
-const strawberryId = 65
+const strawberryId = process.env.REACT_APP_STRAWBERRY_ID
 
 const Mainpage = () => {
 	const [strawberryData, setStrawberryData] = useState({})
@@ -25,7 +25,7 @@ const Mainpage = () => {
 				})
 			}
 		})
-		fetchProducts({skip: [7], limit: 3, random: 1}).then(data => {
+		fetchProducts({skip: [strawberryId], limit: 3, random: 1}).then(data => {
 			if(data.message){
 				console.log(data.message)
 			}
