@@ -28,7 +28,7 @@ const AdminLogin = () => {
 	return (
 		<div className="form">
 			{user && tokenExp * 1000 > Date.now() ? (
-				<Navigate to="/adminpanel" replace={true} />
+				<Navigate to="/admin/panel" replace={true} />
 			) : (
 				<form className="form-horizontal" method="POST" onSubmit={handleSubmit} style={{width: '300px', margin: '0 auto', paddingTop: '40px'}}>
 					<div className="form-group">
