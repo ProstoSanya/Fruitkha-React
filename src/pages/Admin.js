@@ -42,8 +42,8 @@ const Admin = () => {
 							<a className="header__exit exit-button" href="#" onClick={() => dispatch(logout())}>Выйти</a>
 						</div>
 						<div className="main-block__body">
-							<Link to="/adminproducts" className="main-block__button">Управление товарами (продуктами)</Link>
-							<Link to="/adminorders" className="main-block__button">Управление заказами</Link>
+							<Link to="/admin/products" className="main-block__button">Управление товарами (продуктами)</Link>
+							<Link to="/admin/orders" className="main-block__button">Управление заказами</Link>
 						</div>
 					</div>
 				</div>

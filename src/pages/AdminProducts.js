@@ -169,7 +169,7 @@ const AdminProducts = () => {
 		<div className="wrapper admin-wrapper">
 			<header className="header">
 				<div className="header__container">
-					<Link to="/adminorders" className="header__move">&lArr; Управление заказами</Link>
+					<Link to="/admin/orders" className="header__move">&lArr; Управление заказами</Link>
 					<a className="header__exit exit-button" href="#" onClick={() => dispatch(logout())}>Выйти</a>
 				</div>
 			</header>

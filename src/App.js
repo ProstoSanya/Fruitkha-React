@@ -36,9 +36,9 @@ const App = () => {
 				<Route path="/shop/:id" element={<Layout component={Product} breadcrumbText={['See more details', 'Single Product']} />} />
 				<Route path="/checkout" element={<Layout component={Checkout} title="Checkout" breadcrumbText={['Fresh and Organic', 'Check Out Product']} />} />
 				<Route path="/admin" element={<AdminLogin />} />
-				<Route path="/adminpanel" element={<Admin />} />
-				<Route path="/adminproducts" element={<AdminProducts />} />
-				<Route path="/adminorders" element={<AdminOrders />} />
+				<Route path="/admin/panel" element={<Admin />} />
+				<Route path="/admin/products" element={<AdminProducts />} />
+				<Route path="/admin/orders" element={<AdminOrders />} />
 				<Route path="/404" element={<Layout component={NotFoundPage} title="Page Not Found" breadcrumbText={['Fresh and Organic', '404 - Not Found']} />} />
 				<Route path="*" element={<Navigate replace to="/404" />} />
 			</Routes>

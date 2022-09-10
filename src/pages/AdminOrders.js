@@ -94,7 +94,7 @@ const AdminOrders = () => {
 		<div className="wrapper admin-wrapper">
 			<header className="header">
 				<div className="header__container">
-					<Link to="/adminproducts" className="header__move">&lArr; Управление в товарами (продуктами)</Link>
+					<Link to="/admin/products" className="header__move">&lArr; Управление в товарами (продуктами)</Link>
 					<a className="header__exit exit-button" href="#" onClick={() => dispatch(logout())}>Выйти</a>
 				</div>
 			</header>
