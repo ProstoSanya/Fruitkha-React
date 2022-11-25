@@ -8,12 +8,16 @@ export const checkField = (name, value) => {
   else if(value.length > 40){
     return false
   }
-	let result = true
+	let result
 	switch(name){
 		case "email":
 			result = value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i)
+      break
 		case "phone":
 			result = value.match(/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im)
+      break
+    default:
+      result = true
 	}
 	return result
 }
