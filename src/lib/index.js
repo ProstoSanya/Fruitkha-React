@@ -1,7 +1,13 @@
 export const checkField = (name, value) => {
   value = value ? value.toString().trim() : ''
 	if(name !== 'comment'){
-    if(value.length < 3 || value.length > 12){
+    if(value.length < 3){
+      return false
+    }
+    if(name == 'phone' && value.length > 13){
+      return false
+    }
+    else if(value.length > 25){
       return false
     }
 	}
@@ -19,6 +25,7 @@ export const checkField = (name, value) => {
     default:
       result = true
 	}
+  console.log(name, value, result)
 	return result
 }
 
