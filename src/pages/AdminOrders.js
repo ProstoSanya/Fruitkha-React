@@ -110,7 +110,7 @@ const AdminOrders = () => {
 							) : (
 								<div className="order__body">
 									{orders && orders.map((order) =>
-										<div className="order__item item-order">
+										<div key={order.id} className="order__item item-order">
 											<div className="item-order__title">Заказ №{order.id}</div>
 											<div className="item-order__wrapper">
 												<div className="item-order__column">
@@ -118,7 +118,7 @@ const AdminOrders = () => {
 													<div className="item-order__text">Список товаров:</div>
 													<div className="item-order__body">
 														{order.products.map((p) =>
-															<div className="item-order__item">
+															<div key={p.name} className="item-order__item">
 																{p.name} {p.price}грн x {p.order_product.count || 1}шт = {p.price * (p.order_product.count || 1)}грн
 															</div>
 														)}
@@ -142,16 +142,18 @@ const AdminOrders = () => {
 												<div className="item-order__detail">
 													Статус:
 													{orderLoading.includes(order.id) ?
-														<span class="order_loading">
+														<span className="order_loading">
 															<LoadingAnim />
 														</span>
 													:
-														<select className="item-order__select" onChange={(e) => handleStatusChange(e.target.value, order)} disabled={pageLoading ? 'disabled' : false}>
+														<select
+															className="item-order__select"
+															value={order.status}
+															onChange={(e) => handleStatusChange(e.target.value, order)}
+															disabled={pageLoading ? 'disabled' : false}
+														>
 															{Object.keys(statusData).map((s) =>
-																s === order.status ?
-																	<option selected="selected" value={s}>{statusData[s]}</option>
-																:
-																	<option value={s}>{statusData[s]}</option>
+																<option key={s} value={s}>{statusData[s]}</option>
 															)}
 														</select>
 													}
