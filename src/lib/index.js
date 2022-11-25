@@ -25,7 +25,6 @@ export const checkField = (name, value) => {
     default:
       result = true
 	}
-  console.log(name, value, result)
 	return result
 }
 
